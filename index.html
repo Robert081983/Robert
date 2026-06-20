@@ -19,6 +19,8 @@
                         secondary: '#2563eb',
                         accent: '#f59e0b',
                         'primary-dark': '#152a45',
+                        whatsapp: '#25D366',
+                        'whatsapp-dark': '#128C7E',
                     }
                 }
             }
@@ -56,6 +58,18 @@
         }
         .counter {
             font-variant-numeric: tabular-nums;
+        }
+        .whatsapp-pulse {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+            70% { box-shadow: 0 0 0 20px rgba(37, 211, 102, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+        }
+        .whatsapp-btn-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(37, 211, 102, 0.4);
         }
     </style>
 </head>
@@ -96,6 +110,9 @@
                 <a href="#servicios" class="block px-3 py-2 text-gray-600 hover:text-secondary">Servicios</a>
                 <a href="#cotizador" class="block px-3 py-2 text-gray-600 hover:text-secondary">Cotizar</a>
                 <a href="#contacto" class="block px-3 py-2 text-secondary font-medium">Contactar</a>
+                <a href="https://wa.me/598996320545" target="_blank" class="block px-3 py-2 text-whatsapp font-medium">
+                    <i class="fab fa-whatsapp mr-2"></i>WhatsApp
+                </a>
             </div>
         </div>
     </nav>
@@ -118,8 +135,8 @@
                         <a href="#cotizador" class="px-8 py-4 bg-accent text-white rounded-full font-bold text-lg hover:bg-amber-500 hover:shadow-xl transition transform hover:scale-105 text-center">
                             <i class="fas fa-calculator mr-2"></i>Cotizar Ahora
                         </a>
-                        <a href="#servicios" class="px-8 py-4 glass-effect text-white rounded-full font-bold text-lg hover:bg-white/20 transition text-center">
-                            <i class="fas fa-play mr-2"></i>Ver Servicios
+                        <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20seguros" target="_blank" class="px-8 py-4 bg-whatsapp text-white rounded-full font-bold text-lg hover:bg-whatsapp-dark hover:shadow-xl transition transform hover:scale-105 text-center whatsapp-btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
                         </a>
                     </div>
                     <div class="flex items-center space-x-6 pt-6 text-sm text-gray-300">
@@ -223,8 +240,8 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Grúa ilimitada</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Reemplazo de vehículo</li>
                     </ul>
-                    <a href="#cotizador" class="text-secondary font-semibold hover:text-primary transition flex items-center">
-                        Cotizar <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20cotizar%20un%20seguro%20de%20auto" target="_blank" class="text-whatsapp font-semibold hover:text-whatsapp-dark transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
                     </a>
                 </div>
 
@@ -240,8 +257,8 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Contenido del hogar</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Responsabilidad civil</li>
                     </ul>
-                    <a href="#cotizador" class="text-secondary font-semibold hover:text-primary transition flex items-center">
-                        Cotizar <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20cotizar%20un%20seguro%20de%20hogar" target="_blank" class="text-whatsapp font-semibold hover:text-whatsapp-dark transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
                     </a>
                 </div>
 
@@ -257,8 +274,8 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Invalidez total</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Beneficios fiscales</li>
                     </ul>
-                    <a href="#cotizador" class="text-secondary font-semibold hover:text-primary transition flex items-center">
-                        Cotizar <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20cotizar%20un%20seguro%20de%20vida" target="_blank" class="text-whatsapp font-semibold hover:text-whatsapp-dark transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
                     </a>
                 </div>
 
@@ -274,8 +291,8 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Cobertura dental</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Internación sin límites</li>
                     </ul>
-                    <a href="#cotizador" class="text-secondary font-semibold hover:text-primary transition flex items-center">
-                        Cotizar <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20cotizar%20un%20seguro%20de%20salud" target="_blank" class="text-whatsapp font-semibold hover:text-whatsapp-dark transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
                     </a>
                 </div>
 
@@ -291,8 +308,8 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Cancelación de viaje</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>COVID-19 incluido</li>
                     </ul>
-                    <a href="#cotizador" class="text-secondary font-semibold hover:text-primary transition flex items-center">
-                        Cotizar <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20cotizar%20un%20seguro%20de%20viaje" target="_blank" class="text-whatsapp font-semibold hover:text-whatsapp-dark transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
                     </a>
                 </div>
 
@@ -308,8 +325,8 @@
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Incendio y robo</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i>Ciberseguridad</li>
                     </ul>
-                    <a href="#cotizador" class="text-secondary font-semibold hover:text-primary transition flex items-center">
-                        Cotizar <i class="fas fa-arrow-right ml-2 text-sm"></i>
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20cotizar%20un%20seguro%20empresarial" target="_blank" class="text-whatsapp font-semibold hover:text-whatsapp-dark transition flex items-center">
+                        <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
                     </a>
                 </div>
             </div>
@@ -355,14 +372,18 @@
                         </div>
                         <div class="flex items-start space-x-4">
                             <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                                <i class="fas fa-headset text-accent text-xl"></i>
+                                <i class="fab fa-whatsapp text-accent text-xl"></i>
                             </div>
                             <div>
-                                <h4 class="font-bold text-lg">Soporte 24/7</h4>
-                                <p class="text-gray-300">Atención telefónica, WhatsApp y chat en vivo las 24 horas.</p>
+                                <h4 class="font-bold text-lg">Atención por WhatsApp</h4>
+                                <p class="text-gray-300">Escribinos directamente al 099 632 054 y te respondemos al instante.</p>
                             </div>
                         </div>
                     </div>
+
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20seguros" target="_blank" class="inline-flex items-center mt-8 px-8 py-4 bg-whatsapp text-white rounded-full font-bold text-lg hover:bg-whatsapp-dark hover:shadow-xl transition transform hover:scale-105 whatsapp-btn-hover">
+                        <i class="fab fa-whatsapp mr-3 text-xl"></i>Escribinos por WhatsApp
+                    </a>
                 </div>
                 
                 <div class="relative">
@@ -394,9 +415,9 @@
                                 <span class="text-3xl font-bold text-secondary">$89</span>
                             </div>
                         </div>
-                        <button class="w-full mt-6 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-bold hover:shadow-lg transition">
-                            Contratar Ahora
-                        </button>
+                        <a href="https://wa.me/598996320545?text=Hola%2C%20quiero%20contratar%20la%20Cobertura%20Premium" target="_blank" class="w-full mt-6 py-4 bg-whatsapp text-white rounded-xl font-bold hover:bg-whatsapp-dark transition flex items-center justify-center whatsapp-btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i>Contratar por WhatsApp
+                        </a>
                     </div>
                 </div>
             </div>
@@ -427,32 +448,35 @@
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Nombre Completo</label>
-                            <input type="text" placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                            <input type="text" id="quoteName" placeholder="Tu nombre" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                         </div>
                     </div>
 
                     <div class="grid md:grid-cols-2 gap-6">
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                            <input type="email" placeholder="tu@email.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                            <input type="email" id="quoteEmail" placeholder="tu@email.com" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                         </div>
                         <div>
                             <label class="block text-sm font-medium text-gray-700 mb-2">Teléfono</label>
-                            <input type="tel" placeholder="11 1234-5678" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                            <input type="tel" id="quotePhone" placeholder="099 123 456" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                         </div>
                     </div>
 
                     <div id="dynamicFields" class="space-y-6">
-                        <!-- Campos dinámicos según el tipo de seguro -->
                         <div class="grid md:grid-cols-2 gap-6">
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Marca del Vehículo</label>
-                                <input type="text" placeholder="Ej: Toyota" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                                <input type="text" id="field1" placeholder="Ej: Toyota" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                             </div>
                             <div>
                                 <label class="block text-sm font-medium text-gray-700 mb-2">Año</label>
-                                <input type="number" placeholder="2024" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                                <input type="number" id="field2" placeholder="2024" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                             </div>
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-700 mb-2">Modelo</label>
+                            <input type="text" id="field3" placeholder="Ej: Corolla" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                         </div>
                     </div>
 
@@ -463,19 +487,19 @@
                     </div>
                 </form>
 
-                <!-- Resultado de cotización (inicialmente oculto) -->
+                <!-- Resultado de cotización -->
                 <div id="quoteResult" class="hidden mt-8 p-6 bg-green-50 rounded-2xl border border-green-200">
                     <div class="flex items-center justify-between mb-4">
                         <h3 class="text-xl font-bold text-green-800">¡Cotización lista!</h3>
                         <span class="text-3xl font-bold text-green-600">$45<span class="text-lg text-green-700">/mes</span></span>
                     </div>
                     <p class="text-green-700 mb-4">Incluye cobertura completa, asistencia 24/7 y todos los beneficios premium.</p>
-                    <div class="flex gap-3">
-                        <button class="flex-1 py-3 bg-green-600 text-white rounded-xl font-medium hover:bg-green-700 transition">
-                            Contratar Online
-                        </button>
-                        <button class="flex-1 py-3 bg-white text-green-600 border border-green-300 rounded-xl font-medium hover:bg-green-50 transition">
-                            Enviar por Email
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://wa.me/598996320545" id="whatsappQuoteBtn" target="_blank" class="flex-1 py-3 bg-whatsapp text-white rounded-xl font-medium hover:bg-whatsapp-dark transition text-center flex items-center justify-center whatsapp-btn-hover">
+                            <i class="fab fa-whatsapp mr-2"></i>Consultar por WhatsApp
+                        </a>
+                        <button onclick="document.getElementById('quoteResult').classList.add('hidden')" class="flex-1 py-3 bg-white text-gray-600 border border-gray-300 rounded-xl font-medium hover:bg-gray-50 transition">
+                            Nueva Cotización
                         </button>
                     </div>
                 </div>
@@ -581,7 +605,7 @@
                         <i class="fas fa-chevron-down transition-transform"></i>
                     </button>
                     <div class="faq-content hidden px-6 pb-4 text-gray-600">
-                        Podés iniciar un reclamo desde tu panel de cliente, por WhatsApp, teléfono o email. Nuestro equipo te guiará paso a paso.
+                        Podés iniciar un reclamo desde tu panel de cliente, por WhatsApp al 099 632 054, teléfono o email. Nuestro equipo te guiará paso a paso.
                     </div>
                 </div>
 
@@ -594,6 +618,13 @@
                         ¡Sí! Con nuestro Pack Familia obtenés un 20% de descuento al contratar 2 o más seguros. También tenemos beneficios por pago anual.
                     </div>
                 </div>
+            </div>
+
+            <div class="mt-8 text-center">
+                <p class="text-gray-600 mb-4">¿No encontrás tu respuesta?</p>
+                <a href="https://wa.me/598996320545?text=Hola%2C%20tengo%20una%20consulta%20sobre%20los%20seguros" target="_blank" class="inline-flex items-center px-6 py-3 bg-whatsapp text-white rounded-full font-medium hover:bg-whatsapp-dark transition whatsapp-btn-hover">
+                    <i class="fab fa-whatsapp mr-2"></i>Consultanos por WhatsApp
+                </a>
             </div>
         </div>
     </section>
@@ -614,7 +645,7 @@
                             </div>
                             <div>
                                 <p class="text-sm text-gray-400">Teléfono</p>
-                                <p class="font-semibold text-lg">0800-123-4567</p>
+                                <p class="font-semibold text-lg">099 632 054</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-4">
@@ -627,12 +658,12 @@
                             </div>
                         </div>
                         <div class="flex items-center space-x-4">
-                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center">
-                                <i class="fab fa-whatsapp text-accent text-xl"></i>
+                            <div class="w-12 h-12 bg-whatsapp rounded-xl flex items-center justify-center">
+                                <i class="fab fa-whatsapp text-white text-xl"></i>
                             </div>
                             <div>
                                 <p class="text-sm text-gray-400">WhatsApp</p>
-                                <p class="font-semibold text-lg">+593 996320545</p>
+                                <p class="font-semibold text-lg">099 632 054</p>
                             </div>
                         </div>
                         <div class="flex items-center space-x-4">
@@ -660,20 +691,29 @@
                             <i class="fab fa-twitter"></i>
                         </a>
                     </div>
+
+                    <a href="https://wa.me/598996320545?text=Hola%2C%20quiero%20más%20información%20sobre%20sus%20seguros" target="_blank" class="inline-flex items-center mt-8 px-8 py-4 bg-whatsapp text-white rounded-full font-bold text-lg hover:bg-whatsapp-dark hover:shadow-xl transition transform hover:scale-105 whatsapp-btn-hover">
+                        <i class="fab fa-whatsapp mr-3 text-xl"></i>Chatear por WhatsApp
+                    </a>
                 </div>
 
                 <div class="bg-white rounded-3xl p-8 text-gray-800">
                     <h3 class="text-2xl font-bold text-primary mb-6">Envianos un mensaje</h3>
-                    <form class="space-y-4">
+                    <form id="contactForm" class="space-y-4">
                         <div class="grid md:grid-cols-2 gap-4">
-                            <input type="text" placeholder="Nombre" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
-                            <input type="email" placeholder="Email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
+                            <input type="text" id="contactName" placeholder="Nombre" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
+                            <input type="email" id="contactEmail" placeholder="Email" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
                         </div>
-                        <input type="text" placeholder="Asunto" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
-                        <textarea rows="4" placeholder="Tu mensaje..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none resize-none"></textarea>
-                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-xl font-bold hover:shadow-lg transition">
-                            Enviar Mensaje
+                        <input type="text" id="contactSubject" placeholder="Asunto" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none">
+                        <textarea id="contactMessage" rows="4" placeholder="Tu mensaje..." class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none resize-none"></textarea>
+                        
+                        <button type="submit" id="sendWhatsappBtn" class="w-full py-4 bg-whatsapp text-white rounded-xl font-bold hover:bg-whatsapp-dark transition flex items-center justify-center whatsapp-btn-hover">
+                            <i class="fab fa-whatsapp mr-2 text-xl"></i>Enviar por WhatsApp
                         </button>
+                        
+                        <p class="text-xs text-gray-500 text-center mt-2">
+                            Al hacer clic, serás redirigido a WhatsApp con tu mensaje listo para enviar.
+                        </p>
                     </form>
                 </div>
             </div>
@@ -712,13 +752,15 @@
                     </ul>
                 </div>
                 <div>
-                    <h4 class="text-white font-bold mb-4">Legal</h4>
+                    <h4 class="text-white font-bold mb-4">Contacto</h4>
                     <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Términos y Condiciones</a></li>
-                        <li><a href="#" class="hover:text-white transition">Política de Privacidad</a></li>
-                        <li><a href="#" class="hover:text-white transition">Defensa del Consumidor</a></li>
-                        <li><a href="#" class="hover:text-white transition">Solicitud de Baja</a></li>
+                        <li class="flex items-center"><i class="fab fa-whatsapp text-whatsapp mr-2"></i> 099 632 054</li>
+                        <li class="flex items-center"><i class="fas fa-envelope text-accent mr-2"></i> hola@protecciontotal.com</li>
+                        <li class="flex items-center"><i class="fas fa-map-marker-alt text-accent mr-2"></i> Av. Corrientes 1234</li>
                     </ul>
+                    <a href="https://wa.me/598996320545" target="_blank" class="inline-flex items-center mt-4 px-4 py-2 bg-whatsapp text-white rounded-lg text-sm font-medium hover:bg-whatsapp-dark transition whatsapp-btn-hover">
+                        <i class="fab fa-whatsapp mr-2"></i>Escribinos
+                    </a>
                 </div>
             </div>
             <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
@@ -729,9 +771,33 @@
     </footer>
 
     <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/5491123456789" target="_blank" class="fixed bottom-6 right-6 w-14 h-14 bg-green-500 rounded-full flex items-center justify-center text-white shadow-lg hover:bg-green-600 transition transform hover:scale-110 z-50">
-        <i class="fab fa-whatsapp text-2xl"></i>
+    <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20seguros" target="_blank" class="fixed bottom-6 right-6 w-16 h-16 bg-whatsapp rounded-full flex items-center justify-center text-white shadow-2xl hover:bg-whatsapp-dark transition transform hover:scale-110 z-50 whatsapp-pulse">
+        <i class="fab fa-whatsapp text-3xl"></i>
     </a>
+
+    <!-- WhatsApp Chat Widget -->
+    <div id="whatsappWidget" class="fixed bottom-24 right-6 bg-white rounded-2xl shadow-2xl p-4 max-w-xs z-40 hidden transform transition-all duration-300 origin-bottom-right">
+        <div class="flex items-center justify-between mb-3">
+            <div class="flex items-center space-x-2">
+                <div class="w-8 h-8 bg-whatsapp rounded-full flex items-center justify-center">
+                    <i class="fab fa-whatsapp text-white text-sm"></i>
+                </div>
+                <span class="font-bold text-gray-800">Protección Total</span>
+            </div>
+            <button onclick="toggleWidget()" class="text-gray-400 hover:text-gray-600">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <p class="text-sm text-gray-600 mb-3">¡Hola! ¿En qué podemos ayudarte? Escribinos por WhatsApp y te respondemos al instante.</p>
+        <a href="https://wa.me/598996320545?text=Hola%2C%20me%20interesa%20obtener%20información%20sobre%20sus%20seguros" target="_blank" class="block w-full py-2.5 bg-whatsapp text-white rounded-xl text-center font-medium hover:bg-whatsapp-dark transition whatsapp-btn-hover">
+            <i class="fab fa-whatsapp mr-2"></i>Iniciar Chat
+        </a>
+    </div>
+
+    <!-- Toggle Widget Button -->
+    <button id="widgetToggle" onclick="toggleWidget()" class="fixed bottom-24 right-6 w-12 h-12 bg-white rounded-full shadow-lg flex items-center justify-center text-whatsapp z-40 hover:shadow-xl transition">
+        <i class="fas fa-comment-dots text-xl"></i>
+    </button>
 
     <script>
         // Navbar scroll effect
@@ -802,7 +868,6 @@
                 const content = btn.nextElementSibling;
                 const icon = btn.querySelector('i');
                 
-                // Close others
                 document.querySelectorAll('.faq-content').forEach(c => {
                     if (c !== content) c.classList.add('hidden');
                 });
@@ -824,23 +889,23 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Marca del Vehículo</label>
-                        <input type="text" placeholder="Ej: Toyota" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <input type="text" id="field1" placeholder="Ej: Toyota" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Año</label>
-                        <input type="number" placeholder="2024" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <input type="number" id="field2" placeholder="2024" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                     </div>
                 </div>
                 <div>
                     <label class="block text-sm font-medium text-gray-700 mb-2">Modelo</label>
-                    <input type="text" placeholder="Ej: Corolla" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                    <input type="text" id="field3" placeholder="Ej: Corolla" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                 </div>
             `,
             hogar: `
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Tipo de Propiedad</label>
-                        <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <select id="field1" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                             <option>Casa</option>
                             <option>Departamento</option>
                             <option>PH</option>
@@ -848,7 +913,7 @@
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Metros Cuadrados</label>
-                        <input type="number" placeholder="Ej: 120" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <input type="number" id="field2" placeholder="Ej: 120" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                     </div>
                 </div>
             `,
@@ -856,11 +921,11 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Fecha de Nacimiento</label>
-                        <input type="date" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <input type="date" id="field1" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Suma Asegurada</label>
-                        <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <select id="field2" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                             <option>$50.000</option>
                             <option>$100.000</option>
                             <option>$200.000</option>
@@ -873,11 +938,11 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Edad</label>
-                        <input type="number" placeholder="Ej: 35" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <input type="number" id="field1" placeholder="Ej: 35" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Plan Deseado</label>
-                        <select class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <select id="field2" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                             <option>Básico</option>
                             <option>Intermedio</option>
                             <option>Premium</option>
@@ -889,11 +954,11 @@
                 <div class="grid md:grid-cols-2 gap-6">
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Destino</label>
-                        <input type="text" placeholder="Ej: Europa" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <input type="text" id="field1" placeholder="Ej: Europa" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-gray-700 mb-2">Duración (días)</label>
-                        <input type="number" placeholder="Ej: 15" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
+                        <input type="number" id="field2" placeholder="Ej: 15" class="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-secondary focus:ring-2 focus:ring-secondary/20 outline-none transition">
                     </div>
                 </div>
             `
@@ -903,14 +968,63 @@
             dynamicFields.innerHTML = fieldsMap[e.target.value] || '';
         });
 
-        // Form submission
+        // Form submission - Quote
         document.getElementById('quoteForm').addEventListener('submit', (e) => {
             e.preventDefault();
             const result = document.getElementById('quoteResult');
+            const name = document.getElementById('quoteName').value || 'Cliente';
+            const type = document.getElementById('insuranceType').options[document.getElementById('insuranceType').selectedIndex].text;
+            
+            // Update WhatsApp link with quote info
+            const waLink = `https://wa.me/598996320545?text=Hola%2C%20soy%20${encodeURIComponent(name)}.%20Me%20interesa%20cotizar%20un%20${encodeURIComponent(type)}.%20¿Podemos%20hablar?`;
+            document.getElementById('whatsappQuoteBtn').href = waLink;
+            
             result.classList.remove('hidden');
             result.classList.add('fade-in');
             result.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         });
+
+        // Contact Form - Send to WhatsApp
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            const name = document.getElementById('contactName').value;
+            const email = document.getElementById('contactEmail').value;
+            const subject = document.getElementById('contactSubject').value;
+            const message = document.getElementById('contactMessage').value;
+            
+            const text = `Hola, soy ${name}.%0AEmail: ${email}%0AAsunto: ${subject}%0AMensaje: ${message}`;
+            const waUrl = `https://wa.me/598996320545?text=${encodeURIComponent(text)}`;
+            
+            window.open(waUrl, '_blank');
+        });
+
+        // WhatsApp Widget Toggle
+        function toggleWidget() {
+            const widget = document.getElementById('whatsappWidget');
+            const toggleBtn = document.getElementById('widgetToggle');
+            
+            if (widget.classList.contains('hidden')) {
+                widget.classList.remove('hidden');
+                widget.classList.add('scale-100', 'opacity-100');
+                toggleBtn.classList.add('hidden');
+            } else {
+                widget.classList.add('hidden');
+                widget.classList.remove('scale-100', 'opacity-100');
+                toggleBtn.classList.remove('hidden');
+            }
+        }
+
+        // Show widget after 5 seconds
+        setTimeout(() => {
+            const widget = document.getElementById('whatsappWidget');
+            const toggleBtn = document.getElementById('widgetToggle');
+            if (widget.classList.contains('hidden')) {
+                widget.classList.remove('hidden');
+                widget.classList.add('scale-100', 'opacity-100');
+                toggleBtn.classList.add('hidden');
+            }
+        }, 5000);
     </script>
 </body>
 </html>
